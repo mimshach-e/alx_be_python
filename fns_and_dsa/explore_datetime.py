@@ -1,11 +1,11 @@
 # Task 2 - Explore `datetime` Module
 
-import datetime
+from datetime import timedelta, datetime, tzinfo, timezone
 
 # Part 1: Display the Current Date and Time
 def display_current_datetime():
     # Get the current date and time and save
-    current_date = datetime.datetime.now().date()
+    current_date = datetime.now()
     
     # Format the current date and time
     formatted_datetime = current_date.strftime("%Y-%m-%d %H:%M:%S")
@@ -20,10 +20,10 @@ def calculate_future_date():
         number_of_days = int(input("Enter the number of days to add to the current date: "))
         
         # Get the current date
-        current_date = datetime.datetime.now().date()
+        current_date = datetime.now().date()
         
         # Calculate the future date
-        future_date = current_date + datetime.timedelta(days=number_of_days)
+        future_date = current_date + timedelta(days=number_of_days)
         
         # Print the future date
         print("Future Date:", future_date)
