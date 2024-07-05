@@ -25,8 +25,10 @@ def calculate_future_date():
         # Calculate the future date
         future_date = current_date + timedelta(days=number_of_days)
         
+        formatted_future_date = future_date.strftime("%Y-%m-%d")
+
         # Print the future date
-        print("Future Date:", future_date)
+        print("Future Date:", formatted_future_date)
     except ValueError:
         print("Please enter a valid integer for the number of days.")
 
