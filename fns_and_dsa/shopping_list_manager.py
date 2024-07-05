@@ -1,35 +1,6 @@
 #  Task 1 - Shopping List Manager
 
 # Core Functionality:
-# shopping_list = []
-
-# def add_item(item_number, item_name, item_price):
-#     shopping_list_item = {
-#         "item_number": item_number,
-#         "item_name": item_name,
-#         "item_price": item_price
-        
-#     }
-#     shopping_list.append(shopping_list_item)
-#     print(f"Shopping item '{shopping_list_item}' added to the list successfully")
-
-
-# def remove_item(shopping_list, item_name):
-#     for shopping_list_item in shopping_list:
-#         if shopping_list_item["item_name"]:
-#             shopping_list.remove(shopping_list_item)
-#             print(f"{item_name} removed successfully")
-#             return
-#     print(f"{item_name} not found!")
-
-# def view_item(shopping_list):
-#     if not shopping_list:
-#         print("No item found!")
-
-#     for shopping_list_item in shopping_list:
-#         print("My Shopping List")
-#         print(f"{shopping_list_item["item_number"]}. {shopping_list_item["item_name"]} - Price: ${shopping_list_item["item_price"]}")
-
 
 
 def display_menu():
@@ -38,6 +9,7 @@ def display_menu():
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
+
 
 def main():
     shopping_list = []
