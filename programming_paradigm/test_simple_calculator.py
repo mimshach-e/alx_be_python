@@ -11,7 +11,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
 
 # Write Test Methods:
-    def test_add(self):
+    def test_addition(self):
         # est for edge cases
         try:
           # Use Assertions to Verify Results:
@@ -23,7 +23,7 @@ class TestSimpleCalculator(unittest.TestCase):
         except TypeError as t:
            print(t)
 
-    def test_subtract(self):
+    def test_subtraction(self):
        try:
          
          self.assertEqual(self.calc.subtract(4, 1),3)
@@ -35,7 +35,7 @@ class TestSimpleCalculator(unittest.TestCase):
        except TypeError as tt:
           print(tt)
 
-    def test_multiply(self):
+    def test_multiplication(self):
        try:
           self.assertEqual(self.calc.multiply(0, 5), 0)
           self.assertEqual(self.calc.multiply(5, -2), -10)
@@ -46,7 +46,7 @@ class TestSimpleCalculator(unittest.TestCase):
        except TypeError as err:
           print(err)
 
-    def test_divide(self):
+    def test_division(self):
        try:
           self.assertEqual(self.calc.divide(10, 2), 5)
           self.assertEqual(self.calc.divide(0, 3), 0)
