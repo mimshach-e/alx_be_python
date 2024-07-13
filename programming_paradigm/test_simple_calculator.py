@@ -50,7 +50,7 @@ class TestSimpleCalculator(unittest.TestCase):
        try:
           self.assertEqual(self.calc.divide(10, 2), 5)
           self.assertEqual(self.calc.divide(0, 3), 0)
-          self.assertEqual(self.calc.divide(4, 0))
+          self.assertEqual(self.calc.divide(4, 0), 2)
           self.assertEqual(self.calc.divide(10, -5), -2)
           self.assertEqual(self.calc.divide("d", 10), 2)
           self.assertEqual(self.calc.divide(None))
