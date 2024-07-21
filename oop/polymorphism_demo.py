@@ -21,4 +21,4 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * pow(self.radius, 2) # the pow() in-built function is for squaring the base number
+        return math.pi * self.radius ** 2 # the **2 or pow(base-number, 2) in-built function is for squaring the base number
